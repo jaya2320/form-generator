@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import FormBuilder from "./components/FormBuilder";
 import './App.css';
+import {Container} from "@mui/material";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const JsonDisplay = ({ data }) => {
+    return (
+        <div className="json-display">
+            <h3>Form Configuration (JSON)</h3>
+            <pre>{JSON.stringify(data, null, 2)}</pre>
+        </div>
+    );
+};
+const App = () => {
+    const [formConfig, setFormConfig] = useState([]);
+
+    const saveConfig = () => {
+        const json = JSON.stringify(formConfig);
+        localStorage.setItem('formConfig', json);
+        alert('Configuration saved!');
+    };
+
+    const loadConfig = () => {
+        const json = localStorage.getItem('formConfig');
+        if (json) {
+            setFormConfig(JSON.parse(json));
+            alert('Configuration loaded!');
+        } else {
+            alert('No configuration found.');
+        }
+    };
+
+    return (
+        <div className="app">
+            <h1>Dynamic Form Generator</h1>
+            <FormBuilder formConfig={formConfig} setFormConfig={setFormConfig} />
+            <div className="button-group">
+                <button onClick={saveConfig}>Save Configuration</button>
+                <button onClick={loadConfig}>Load Configuration</button>
+            </div>
+            <JsonDisplay data={formConfig} /> {/* Display the JSON configuration */}
+        </div>
+    );
+};
 
 export default App;

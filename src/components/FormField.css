@@ -1,0 +1,12 @@
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input, .form-field select {
+    padding: 5px;
+}

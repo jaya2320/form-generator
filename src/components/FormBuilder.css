@@ -1,0 +1,38 @@
+.form-builder {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input,
+.input-group select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fields-list {
+    margin-top: 20px;
+}
+
+.fields-list .form-field {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fields-list label {
+    margin-bottom: 5px;
+}
+
+.fields-list button {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
