@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jaya2320/form-generator/static/css/main.e38de744.css",
-    "main.js": "/jaya2320/form-generator/static/js/main.6325ba60.js",
-    "static/js/453.c4550ec1.chunk.js": "/jaya2320/form-generator/static/js/453.c4550ec1.chunk.js",
-    "index.html": "/jaya2320/form-generator/index.html",
-    "main.e38de744.css.map": "/jaya2320/form-generator/static/css/main.e38de744.css.map",
-    "main.6325ba60.js.map": "/jaya2320/form-generator/static/js/main.6325ba60.js.map",
-    "453.c4550ec1.chunk.js.map": "/jaya2320/form-generator/static/js/453.c4550ec1.chunk.js.map"
+    "main.css": "/form-generator/static/css/main.e38de744.css",
+    "main.js": "/form-generator/static/js/main.c51dcaf5.js",
+    "static/js/453.c4550ec1.chunk.js": "/form-generator/static/js/453.c4550ec1.chunk.js",
+    "index.html": "/form-generator/index.html",
+    "main.e38de744.css.map": "/form-generator/static/css/main.e38de744.css.map",
+    "main.c51dcaf5.js.map": "/form-generator/static/js/main.c51dcaf5.js.map",
+    "453.c4550ec1.chunk.js.map": "/form-generator/static/js/453.c4550ec1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e38de744.css",
-    "static/js/main.6325ba60.js"
+    "static/js/main.c51dcaf5.js"
   ]
 }
